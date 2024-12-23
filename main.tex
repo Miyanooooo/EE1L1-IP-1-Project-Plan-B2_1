@@ -1,0 +1,92 @@
+\documentclass[whitelogo,oneside]{TUD-report2022}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{biblatex}
+\usepackage{fancyhdr}
+\usepackage{nameref}
+\addbibresource{report.bib}
+\usepackage[document]{ragged2e}
+
+\usepackage{changes}
+\usepackage{blindtext}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{longtable}
+\usepackage{verbatim}
+\definecolor{Delft_Blue}{RGB}{0, 166, 243}
+\addbibresource{report.bib}
+\newcommand{\usection}[1]{%
+    \section*{#1}
+    \addcontentsline{toc}{section}{\protect\numberline{}#1}
+    \markright{#1}
+}
+\newcommand{\usubsection}[1]{%
+    \subsection*{#1}
+    \addcontentsline{toc}{subsection}{\protect\numberline{}#1}
+    \markright{#1}
+}
+\newcommand{\usubsubsection}[1]{%
+    \subsubsection*{#1}
+    \addcontentsline{toc}{subsubsection}{\protect\numberline{}#1}
+    \markright{#1}
+}
+
+\begin{document}
+
+\frontmatter
+\title{\fontsize{40}{40}\fontseries{b}\selectfont EE1L1 IP-1\newline B2-1 Project Plan}
+
+\subtitle[tudelft-black]{\huge Defining Goals, Timelines, and Deliverability}
+\titleoffsetx{2cm}
+\titleoffsety{8cm}
+
+\afiloffsetx{1cm}
+\afiloffsety{16cm}
+
+\coverimage{cover/EEMCS TU Delft Cover.jpg}
+
+\author[tudelft-white]{
+\Large{\vspace{10pt}
+\fontseries{b}\selectfont
+Team Members: T.J. Bello, I. Givony, A. Guo,\newline N.T. Herijgers, S.J.H. ter Huurne, L.D. Melissant,\newline K.W. Smid, N.F. van Vroonhoven,\newline G.D. van Weelden, T.V. Wever.\\
+\vspace{10pt}
+Supervisor: H.E.J. Bosma \\
+Teaching Assistant: M. Mihankhah \\
+\vspace{5pt}
+BSc Electrical Engineering \\
+Faculty of Electrical Engineering, Mathematics and Computer Science\\
+\vspace {10pt}
+02-12-2024}}
+
+\affiliation{Technische Universiteit Delft}
+
+\setpagecolor{tudelft-cyan}
+\makecover
+
+\tableofcontents
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+\input{chapter-0}
+\input{chapter-1}
+\input{chapter-2}
+\input{chapter-3}
+\input{chapter-4}
+\input{chapter-5}
+\input{chapter-6}
+\input{commitment contract}
+
+%% Use letters for the chapter numbers of the appendices.
+\appendix
+
+%\input{appendix-a}
+\newpage
+\nocite{alexander-2021}
+\nocite{Grit}
+\printbibliography
+
+\end{document}
+

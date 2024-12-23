@@ -1,0 +1,25 @@
+\chapter{Conclusion} 
+\setlength{\parindent}{20pt}
+In conclusion, this project plan will be followed to help overcome challenges that may arise. As outlined in Chapter \ref{chap:projectresults} (\nameref{chap:projectresults}), the specifications and requirements for the loudspeaker are clearly defined, while the project limits and constraints are detailed in Chapter \ref{chap:projectactivities} (\nameref{chap:projectactivities}). The schedules of each subgroup will serve as the foundation for this approach, ensuring effective coordination and minimizing the risk of miscommunication between subgroups. Additionally, the work breakdown provides a clear delineation of responsibilities and tasks for each subgroup.  \\
+
+
+\usubsection{{Power Supply}}
+
+The power supply group successfully designed and built their power supply. The specifications were that the maximum voltage output was 22 V, that the load current was 1 A, with an average output of 17 - 20 V, and lastly that the ripple voltage did not exceed 5\%. The power supply was designed in a way that this was achieved successfully, with validation provided through simulations conducted using LTSpice, and measurements.\\
+
+\usubsection{{Power Amplifier}}
+
+The power amplifier group was able to design and build an amplifier that met the required specifications. Ideally, this power amplifier can suppress all frequencies below 20 Hz and above 40 kHz. That is done with the low pass filter and high pass filter before the input of the opamp in the circuit. The pass-band gain of this circuit is 25. This means that the voltage at the input is amplified 25 times, which is equal to an added gain of about 28 dB to the input 'volume' of 0 dB. Furthermore, any DC offset at the input of the amplifier is amplified by a maximum of 1, to suppress any clipping of the speaker. The eventual range of frequencies is about 20 Hz - 41 kHz with a gain of about 28.2 dB (according to simulations). This means that at least the design of the power amplifier was successful.\\
+
+\usubsection{{Filters}}
+The three filter groups all worked together to get to an end product. First, the speaker data was analyzed with the help of Python. A model of the loudspeaker was created. Using the data, along with the model, the value of the impedance in the loudspeaker model was created. This created a base for the work on the filters. After that, the acoustic data of the speaker was analyzed cooperatively. This acoustic data indicates how the speaker will react at each frequency and what the power of the sound that it generates, is. This led to a decision about the cut-off frequencies, so what frequencies each speaker will produce.
+
+\usubsubsection{\textbf{Low-Pass}}
+It was found that the \textbf{low-pass} filter had to take the cut-off frequency at 150 Hz. At this point, this filter will reduce its power output to less than 50\% of its peak value. Python was used to simulate the circuit and to find the optimal match for the components of the filter attached to the loudspeaker. This led to a match with the available components and a cut-off frequency of 150 Hertz.
+
+\usubsubsection{\textbf{Band-Pass}}
+After that data analysis of the loudspeaker, it was decided that a second-order filter should be used for the \textbf{band-pass} filter. It was inferred from the acoustic data analysis that the cut-off frequencies should be 150 Hz and 1250 Hz. This means that the band-pass filter will start accepting frequencies between 150 and 1250 Hz, and reject anything outside of this. Python was used again to find the best match for the combination of components.
+
+\usubsubsection{\textbf{High-Pass}}
+For the \textbf{high-pass} filter, similar measures were taken. After collecting data on their loudspeaker impedance, it was discussed with the other groups how to find the cut-off frequencies for each filter. The conclusion was that it may be appropriate for the high-pass filter to have an earlier cut-off frequency than the band-pass filter. This will allow for a smoother transition from band-pass to high-pass, as the mid-toner is sensitive around the cut-off frequencies mentioned before. This raised questions about the phase, as the band-pass filter must be in phase with the high-pass filter at the cut-off frequencies. When simulations were performed, the high-pass filter was successfully designed and synthesized, with the appropriate cut-off frequency.
+

@@ -1,0 +1,164 @@
+\chapter{Project Activities} 
+\label{chap:projectactivities}
+\section{Tasks Required}
+\paragraph{}
+ To achieve the set goal (See chapter \ref{chap:projectresults}), it is necessary to design and build an adequate power supply, several filters for the speaker cones and a power amplifier. This will be done by several subgroups, each having their respective tasks and requirements, but will help the others when it is required and when they have the opportunity and time to do so.
+ 
+\section{Meeting Functions}
+
+\begin{table}[h!]
+\centering
+\captionsetup{justification=centering, labelfont=bf}
+\caption{\textbf{Functions during meetings}}
+\begin{tabular*}{0.68\textwidth}{@{\extracolsep{\fill}} p{0.15\textwidth} p{0.25\textwidth} p{0.25\textwidth} @{}}
+    \toprule
+    \textbf{Week \#:} & \textbf{Chair} & \textbf{Secretary} \\
+    \midrule
+    {\textbf{\underline{Week 2.2}} \newline 19/11/2024 \newline 21/11/2024} 
+    & \vspace{2pt} {T.J. Bello} \newline {S.J.H. ter Huurne} 
+    & \vspace{2pt} {K.W. Smid} \newline {N.T. Herijgers}\\
+
+    {\textbf{\underline{Week 2.3}} \newline 26/11/2024 \newline 28/11/2024} 
+    & \vspace{2pt} {N.T. Herijgers} \newline {S.J.H. ter Huurne} 
+    & \vspace{2pt} {K.W. Smid} \newline {T.J. Bello}\\
+
+    {\textbf{\underline{Week 2.4}} \newline 03/12/2024 \newline 05/12/2024} 
+    & \vspace{2pt} {N.F. van Vroonhoven} \newline {T.V. Wever} 
+    & \vspace{2pt} {T.V. Wever} \newline {N.F. van Vroonhoven}\\
+
+    {\textbf{\underline{Week 2.6}} \newline 17/12/2024 \newline 19/12/2024}
+    & \vspace{2pt} {A. Guo} \newline {G.D. van Weelden} 
+    & \vspace{2pt} {G.D. van Weelden} \newline {A. Guo}\\
+
+    {\textbf{\underline{Week 2.7}} \newline 07/01/2025 \newline 09/01/2025} 
+    & \vspace{2pt} {I. Givony} \newline {L.D. Melissant} 
+    & \vspace{2pt} {L.D. Melissant} \newline {I. Givony}\\
+
+    {\textbf{\underline{Week 2.7}} \newline 14/01/2025 \newline 16/01/2025} 
+    & \vspace{2pt} {Repair} \newline {Repair} 
+    & \vspace{2pt} {Repair} \newline {Repair}\\
+    \bottomrule
+\end{tabular*}
+
+\label{tab:meetingfunctions}
+\end{table}
+
+\paragraph{}
+The persons who will fulfill the functions of chair and secretary in the various meetings can be seen in table \ref{tab:meetingfunctions}.
+
+\newpage
+\section{Work Breakdown}
+A small breakdown and overview of the work and tasks each subgroup has:
+
+
+\begin{table}[h!]
+\centering
+\captionsetup{justification=centering, labelfont=bf}
+\caption{\textbf{Power-Supply Work Breakdown}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.80\textwidth} @{}} 
+\toprule
+     \textbf{Power Supply} \\
+     \midrule
+    \begin{itemize}
+        \item \textbf{Integrated Project-1 Manual} \newline Analyzing and dimensioning the power supply, calculating what the value of the capacitor needs to be for a ripple voltage smaller than 5\%. The chosen capacitance, between 4700$\mu$F and 6800$\mu$F, should be such that the ripple voltage does not exceed this threshold.
+        \item \textbf{LTSpice} \newline Simulating the power supply in LTSpice using the calculated values of the capacitor and building the power supply. The simulations should make it clear whether the calculated value of the capacitor ensures that the ripple voltage remains under 5\%.
+        \item \textbf{Power-Supply Circuitry} \newline Measuring the characteristics of the built power supply and analyzing the data gained. Measurements from the built power supply will be then compared to the simulations to see whether the values and results are expected in reality.
+    \end{itemize} \\
+     \bottomrule
+\end{tabular*}
+
+\label{tab:PS Work Breakdown}
+\end{table}
+
+\begin{table}[h!]
+\captionsetup{justification=centering, labelfont=bf}
+\caption{\textbf{Power-Amplifier Work Breakdown}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.80\textwidth} @{}} 
+\toprule
+     \textbf{Power Amplifier} \\
+     \midrule
+    \begin{itemize}
+        \item \textbf{Integrated Project-1 Manual} \newline Analyzing \& designing the Power Amplifier circuit and determining values. These values include the resistors: $\textit{R}_a$, $\textit{R}_b$, and $\textit{R}_c$, and the capacitors: $C^{*}_1$ and $C_X$. Analyzing the Power Amplifier circuit should make clear what the values of each of these components are and whether they are needed in the first place.
+        \item \textbf{LTSpice} \newline Simulating the Power Amplifier circuit in LTSpice and building the Power Amplifier. The simulations should make it clear whether the choices made before, which values for the resistors and capacitors or even using them, are desired for the expected results.
+        \item \textbf{Power-Amplifier Circuitry} \newline Measuring the characteristics of the built Power Amplifier and analyzing the data gained. The measurements should give insight into whether the goal for the Power Amplifier is achieved: non-inverting configuration, voltage gain of 25 and amplification of any DC offset at the input by 1. 
+    \end{itemize} \\
+     \bottomrule
+\end{tabular*}
+
+\label{tab:PA Work Breakdown}
+\end{table}
+
+\newpage
+
+\begin{table}[h!]
+\captionsetup{justification=centering, labelfont=bf}
+\caption{\textbf{Low-Pass Work Breakdown}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.80\textwidth} @{}} 
+\toprule
+     \textbf{Bass / Low Pass Filter} \\
+     \midrule
+    \begin{itemize}
+        \item \textbf{Integrated Project-1 Manual} \newline Calculating the values of the Low-Pass components and deciding whether a First-order Low-pass Filter (FO-LPF) or Second-order Low-pass Filter (SO-LPF) and thus a Zobel network should be implemented into the design.
+        \item \textbf{LTSpice} \newline Designing the said circuit with the insight gained from calculations, simulating the circuit in LTSpice and plotting them in Python. Results should give insight into whether decisions make the filter viable or whether changes are needed.
+        \item \textbf{Low-Pass Circuity} \newline Building the circuit and measuring the characteristics of the built Low-Pass Circuit and analyzing the data gained. Seeing if the circuit is working and the measurements should show if the filter is working as intended.
+        \item \textbf{Band-Pass Circuitry} \newline Adjustments to the Low-Pass circuitry if needed.
+    \end{itemize} \\
+     \bottomrule
+\end{tabular*}
+
+\label{tab:LP Work Breakdown}
+\end{table}
+
+\begin{table}[h!]
+\captionsetup{justification=centering, labelfont=bf}
+\caption{\textbf{Band-Pass Work Breakdown}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.80\textwidth} @{}} 
+\toprule
+     \textbf{Mid Toner / Band-Pass} \\
+     \midrule
+    \begin{itemize}
+        \item \textbf{Integrated Project-1 Manual} \newline Doing a speaker analysis and calculate the values of the Band-Pass components and deciding whether a First-, Second-, Third- or Fourth-Order filter is needed to achieve the desired frequency range and the determent transition between the Low- and High-Pass filter and determine whether a Zodal network consisting of a capacitor and an resistor is beneficial for the filter.
+        \item \textbf{LTSpice} \newline Designing the said circuit with the insight gained from calculations, simulating the circuit in LTSpice and plotting them in Python. Results should give insight into whether decisions make the filter viable or whether changes are needed.
+        \item \textbf{Band-Pass Circuity} \newline Building the determent circuit and measuring the characteristics of the built Band-Pass Circuit and analyzing the data gained based on theoretical data we calculated before. 
+        \item \textbf{Band-Pass Circuitry} \newline Adjustments to the Band-Pass circuitry if needed.
+    \end{itemize} \\
+     \bottomrule
+\end{tabular*}
+
+\label{tab:BP Work Breakdown}
+\end{table}
+
+\newpage
+
+\begin{table}[h!]
+\captionsetup{justification=centering, labelfont=bf}
+\caption{\textbf{High-Pass Work Breakdown}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} p{0.80\textwidth} @{}} 
+\toprule
+     \textbf{Tweeter / High-Pass} \\
+     \midrule
+    \begin{itemize}
+        \item \textbf{Integrated Project-1 Manual} \newline Calculating the values of the Low-Pass components and deciding whether a First-order High-pass Filter (FO-HPF) or Second-order High-pass Filter (SO-HPF) and thus a Zobel network should be implemented into the design.
+        \item \textbf{LTSpice} \newline Designing the said circuit with the insight gained from calculations, simulating the circuit in LTSpice and plotting them in Python. Results should give insight into whether decisions make the filter viable or whether changes are needed.
+        \item \textbf{Band-Pass Circuity} \newline Building the circuit and measuring the characteristics of the built High-Pass Circuit and analyzing the data gained. Seeing if the circuit is working and the measurements should show if the filter is working as intended.
+        \item \textbf{High-Pass Circuitry} \newline Adjustments to the High-Pass circuitry if needed.
+    \end{itemize} \\
+     \bottomrule
+\end{tabular*}
+
+\label{tab:HP Work Breakdown}
+\end{table}
+
+\section{Project limits}
+\paragraph{}
+This Integrated Project aims to build an electrical system to drive a speaker box. This system should have the following characteristics:
+
+\begin{itemize}
+    \item The amplification of a tone should only depend on the input amplitude and not on its frequency.
+    \item The frequency of the audio system range shall be between 20 Hz and 20 kHz (-3 dB bandwidths). It may only send filtered amplified sound signals between 20 Hz and 20 kHz to the speaker.
+    \item The output voltage to the speakers can be 10 V at maximum.
+    \item The signal source produces an electrical signal with an amplitude of a maximum of 0.4 V.
+    \item The system should be put into the IP-1 chassis. 
+\end{itemize}
+
+
